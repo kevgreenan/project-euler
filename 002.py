@@ -9,9 +9,10 @@ stop = 4000000
 a = 1
 b = 2
 for i in range(0, stop):
-    nextNum = a + b
-    if nextNum % 2 == 0:
-        evenSum = evenSum + nextNum
-    a = b
-    b = nextNum
-print(sum)
+    if a < stop and b < stop:
+        nextNum = a + b
+        if nextNum % 2 == 0:
+            evenSum = evenSum + nextNum
+        a = b
+        b = nextNum
+print("DONE: %s" % evenSum)
